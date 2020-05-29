@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+/* reset element */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background: #000
+}
+
+img {
+  vertical-align: middle;
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0 none;
+  table-layout: fixed;
+  width: 100%;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+address,
+em {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 건너뛰기 링크(접근성) */
+.skipnav a {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  z-index: 99999;
+}
+
+.skipnav a:focus,
+.skipnav a:active {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+/* 비장애인들한테는 보일 필요가 없는 컨텐츠이지만, 장애인들한테는 인식돼야 할 컨텐츠에 붙이는 클래스 */
+.blind {
+  font-size: 0;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* 테이블의 제목과 폼의 그룹화 요소는 안보이게 처리함 */
+caption,
+legend {
+  display: none
+}
+
+/* 자식들이 float 속성을 가질때 부모의 높이가 무너지므로 .cf로 해결함 */
+.cf:after,
+.cf:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: "Malgun Gothic", "맑은 고딕"
+    sans-serif;
+  font-size: 16px;
+  color: #444;
+  letter-spacing: -1px;
+}
+
+
+.row {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  body{width: 100%; height: 100%; position: fixed; 
+    background: #111; color: #bbb; font-family: "adfont";}
+.vid{position: fixed; width: 100%; height: 100%; top: 0; left: 0;}
+.vid video{min-width: 100%; min-height: 100%; position: absolute; top: 50%; left: 50%;
+transform:translate(-50%,-50%);   }
+
+
+
+#header{position: fixed; width: 700px; height: 100%; 
+  background: rgba(0, 0, 0, 0.5);; transform: skew(-40deg);
+left: -420px; 
+
+}
+
+h1{position: absolute; top: 40px; right: 150px;
+transform: skew(40deg);}
+h1 img{width: 280px;}
+
+#gnb {position: absolute; top: 200px; right: 0px; width:220px; 
+font-family: 'Play', sans-serif
+}
+.depth1 > li {color: #222; 
+  text-align: left; font-size: 18px; 
+  font-weight: bold;
+transition:all 0.4s; position: relative;}
+
+.depth1 > li.on{background: #111; color: #fff;}
+.depth1 > li:hover{background: #111; color: #fff;}
+
+
+.depth1 > li > a {display: block; padding-left:40px ;
+  height: 50px; line-height: 50px; padding-left: 40px;}
+/*transform 속성은  block요소에만 적용됨*/
+#gnb em{transform: skew(40deg); display: block;
+font-style: normal;}
+
+.depth1 > li i {margin-right: 20px;}
+
+.depth2{position: absolute; left: 0; top:0; width: 150px; opacity: 0; transition: all 0.5s;}
+.depth1 >li.on .depth2{opacity: 0.8; left: 220px;}
+.depth1 > li:hover .depth2{opacity: 0.8; left: 220px;}
+.depth2 > li{height: 50px; line-height: 50px; background: #111; 
+border-bottom: 1px solid #fff;
+font-size: 16px; color: #fff; margin-bottom: 3px; text-align: center;
+}
+.depth2 > li > a {display: block; height: 40px; line-height: 40px;}
+
+.depth2 >li:hover {background: rgba(0, 0, 0, 0.5) ;color: #fff;} 

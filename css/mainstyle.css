@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+/* reset element */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+img {
+  vertical-align: middle;
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0 none;
+  table-layout: fixed;
+  width: 100%;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+address,
+em {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 건너뛰기 링크(접근성) */
+.skipnav a {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  z-index: 99999;
+}
+
+.skipnav a:focus,
+.skipnav a:active {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+/* 비장애인들한테는 보일 필요가 없는 컨텐츠이지만, 장애인들한테는 인식돼야 할 컨텐츠에 붙이는 클래스 */
+.blind {
+  font-size: 0;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* 테이블의 제목과 폼의 그룹화 요소는 안보이게 처리함 */
+caption,
+legend {
+  display: none
+}
+
+/* 자식들이 float 속성을 가질때 부모의 높이가 무너지므로 .cf로 해결함 */
+.cf:after,
+.cf:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: "Malgun Gothic", "맑은 고딕"
+    sans-serif;
+  font-size: 16px;
+  color: #444;
+  letter-spacing: -1px;
+}
+
+
+.row {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+
+
+
+#wrap {position: relative;}
+
+#top {
+  height: 150px; 
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 1920px;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  }
+
+#top h1{position: absolute; top: 40px; left: 150px;
+  }
+#top h1 img{width: 280px;}
+
+
+#header .header_cont {
+    float: right;
+    width: 780px;
+  }
+  
+  .util {
+    text-align: right;
+  }
+  
+  .util>li {
+    display: inline-block;
+    font-size: 14px;
+    color: #eee;
+    padding: 10px 0 0 20px;
+  }
+  
+  .util>li:after {
+    content: "|";
+    display: inline-block;
+    font-size: 10px;
+    position: relative;
+    color: #eee;
+    left: 10px;
+    top: -2px
+  }
+  
+  .util>li:last-child:after {
+    display: none;
+  }
+
+#top .nav {
+ position: absolute; top: 65%; right: 10%;
+}
+
+#top .depth1 {width: 200px;  color: #fff;;
+font-weight: bold;
+text-align: center; float: left; font-size: 25px; padding: 0 25px;}
+
+#top .depth1:hover {
+color: #c4923a; transition: all 0.5s;
+
+}
+#top .depth1:hover .depth2{
+   transition: all 0.5s;
+  font-weight: normal;
+  margin-top: 27px;
+  display: block;
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+
+}
+
+#top .depth2 {
+  display:none;
+font-size: 20px;
+}
+#top .depth2 li:hover {
+  transition: all 0.5s;
+  color: #c4923a;
+}
+#top .depth2 ul{
+  background:rgba(0, 0, 0, 0.5 );
+  height: 40px;
+}
+/*동영상*/
+
+.background .vid{
+    width: 1920px;
+    height: 1080px;
+}
+
+/*모바일,pc설명*/
+.mobile{
+    height: 800px;
+    width: 1920px;
+    background: #fff;
+}
+.mobiles {
+    background: #000;
+    width: 1400px;
+    height: 600px;
+    margin: 0 auto;
+}
+.mbg img{
+    float: left;
+    width: 800px;
+    height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
