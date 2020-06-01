@@ -221,24 +221,35 @@ font-size: 20px;
     height: 1080px;
 }
 
-/*모바일,pc설명*/
+/*모바일설명*/
 .mobile{
     height: 800px;
     width: 1920px;
     background: #fff;
 }
 .mobiles {
-    background: #000;
+    background: gray;
     width: 1400px;
     height: 600px;
     margin: 0 auto;
 }
+.mbg{
+  width: 400px;
+  height: 350px;
+  border: 3px solid #444;
+}
 .mbg img{
     float: left;
-    width: 800px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
+.mtxt {
+  border: 3px solid #000;
+  float: right;
+}
 
 
 
