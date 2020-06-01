@@ -221,35 +221,87 @@ font-size: 20px;
     height: 1080px;
 }
 
+/*데코*/
+.deco{
+  width: 100%;
+  height: 100px;
+  background:#000 ;
+  border-bottom: 5px solid #000;
+  border-top: 5px solid #000;
+
+}
+
+
 /*모바일설명*/
 .mobile{
-    height: 800px;
-    width: 1920px;
-    background: #fff;
+  height: 1000px;
+  background-size: cover;
+    background:url(../img/background22.jpg) no-repeat;
+    background-attachment: fixed;
+    position: relative;
 }
 .mobiles {
-    background: gray;
+    background: rgba(0, 0, 0, 0.5);
     width: 1400px;
-    height: 600px;
+    height: 1000px;
     margin: 0 auto;
+    position: relative;
 }
 .mbg{
   width: 400px;
   height: 350px;
-  border: 3px solid #444;
+
 }
 .mbg img{
+  position: absolute; top: 10%; left: 5%;
     float: left;
     width: 300px;
     height: 300px;
-    padding-left: 20px;
-    padding-top: 20px;
+
+}
+.micon1 img{
+  position: absolute; top: 10%;left: 28%;
+  width: 80px;
+  height: 80px;
 }
 
 .mtxt {
-  border: 3px solid #000;
+  font-size: 17px;
+  color:#555 ;
   float: right;
+  position: absolute; top: 20%; left: 30%;
 }
+
+.mtxt{
+  color: #555;
+}
+
+.micon2{
+  position: absolute; top: 35%; left: 30%;
+  border: 2px solid #fff;
+}
+
+.play1 img {
+  width: 250px;
+  height: 150px;
+  position: absolute; top: 10%; left: 45%;
+  border: 2px solid #000;
+}
+
+.play2 img {
+  width: 250px;
+  height: 150px;
+  position: absolute; top: 10%; left: 63%;
+  border: 2px solid #000;
+}
+.play3 img {
+  width: 250px;
+  height: 150px;
+  position: absolute; top: 10%; left: 81%;
+  border: 2px solid #000;
+}
+
+
 
 
 
