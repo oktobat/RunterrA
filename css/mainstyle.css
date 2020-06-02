@@ -266,15 +266,12 @@ font-size: 20px;
 }
 
 .mtxt {
+  color: #eee;
   font-size: 17px;
-  color:#555 ;
   float: right;
   position: absolute; top: 20%; left: 30%;
 }
 
-.mtxt{
-  color: #555;
-}
 
 .micon2{
   position: absolute; top: 35%; left: 30%;
