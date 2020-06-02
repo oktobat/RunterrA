@@ -226,15 +226,13 @@ font-size: 20px;
   width: 100%;
   height: 100px;
   background:#000 ;
-  border-bottom: 5px solid #000;
-  border-top: 5px solid #000;
 
 }
 
 
 /*모바일설명*/
 .mobile{
-  height: 1000px;
+  height: 1500px;
   background-size: cover;
     background:url(../img/background22.jpg) no-repeat;
     background-attachment: fixed;
@@ -243,7 +241,7 @@ font-size: 20px;
 .mobiles {
     background: rgba(0, 0, 0, 0.5);
     width: 1400px;
-    height: 1000px;
+    height: 1500px;
     margin: 0 auto;
     position: relative;
 }
@@ -251,6 +249,12 @@ font-size: 20px;
   width: 400px;
   height: 350px;
 
+}
+.minfo{
+  color: #fff;
+  font-size: 45px;
+  padding-top: 40px;
+  padding-left: 65px;
 }
 .mbg img{
   position: absolute; top: 10%; left: 5%;
@@ -260,7 +264,7 @@ font-size: 20px;
 
 }
 .micon1 img{
-  position: absolute; top: 10%;left: 28%;
+  position: absolute; top: 10%;left: 30%;
   width: 80px;
   height: 80px;
 }
@@ -269,12 +273,12 @@ font-size: 20px;
   color: #eee;
   font-size: 17px;
   float: right;
-  position: absolute; top: 20%; left: 30%;
+  position: absolute; top: 17%; left: 30%;
 }
 
 
 .micon2{
-  position: absolute; top: 35%; left: 30%;
+  position: absolute; top: 27%; left: 30%;
   border: 2px solid #fff;
 }
 
@@ -298,11 +302,30 @@ font-size: 20px;
   border: 2px solid #000;
 }
 
+.hero {
+  width: 100%;
+  height: 600px;
+}
+.jin01 img{
+ position: absolute; top: 50%; left: 3%; 
+  width: 1300px;
+  height: 700px;
+  
+}
 
 
 
 
+.cardshop{
+height: 1000px;
+background: #444;
+}
 
+/*맨끝*/
+.address{
+  width: 1920px;
+  height: 400px;
+}
 
 
 
