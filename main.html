@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <title>메인 홈페이지</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/mainstyle.css">
-        	<!--[if lte IE 9]>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-migrate-1.4.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <!--[if lte IE 9]>
 	<script src="js/html5shiv.js"></script>
 	<script src="js/prefixfree.min.js"></script>
 <![endif]-->
@@ -13,151 +19,159 @@
 
 <body>
     <div class="skipnav"><a href="#container">본문 바로가기</a></div>
-<div class="wrap">
-    <header id="top" class="">
-        <div class="logo row cf">
-            <h1><a href="main.html"><img src="img/logo1.png" alt=""></a></h1>
-            <p class="openMOgnb">
-                <a href="#none">
-                    <strong class="blind">메뉴열기</strong>
-                       <span></span>
-                       <span></span>
-                       <span></span>
-                </a>
-            </p>
-            <div class="header_cont">
-                <ul class="util">
-                    <li><a href="#"><strong>로그인</strong></a></li>
-                    <li><a href="join.html"><strong>회원가입</strong></a></li>
-                </ul>
-            <nav class="nav cf">
-           <ul class="depth1 row cf">
-               <li><a href="#">새소식</a>
-               <div class="depth2">
-                  <ul>
-                      <li><a href="#">공지사항</a></li>
-                      </ul>
-                    <ul>
-                      <li><a href="#">패치내용</a></li>
+    <div class="wrap">
+        <header id="top" class="">
+            <div class="logo row cf">
+                <h1><a href="main.html"><img src="img/logo1.png" alt=""></a></h1>
+                <p class="openMOgnb">
+                    <a href="#none">
+                        <strong class="blind">메뉴열기</strong>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </p>
+                <div class="header_cont">
+                    <ul class="util">
+                        <li><a href="#"><strong>로그인</strong></a></li>
+                        <li><a href="join.html"><strong>회원가입</strong></a></li>
                     </ul>
-                    <ul>
-                        <li><a href="#">이벤트</a></li>
-                      </ul>
-               </div>
-    </ul>
-           <ul class="depth1 row">
-            <li><a href="#">게임정보</a></li>
-            <div class="depth2">
-                <ul>
-                    <li><a href="#">모바일소개</a></li>
-                    </ul>
-                  <ul>
-                      <li><a href="#">진  영</a></li>
-                  </ul>
-                  <ul>
-                    <li><a href="#">카드목록</a></li>
-                </ul>
-             </div>
-  </ul>
-  <ul class="depth1 row cf">
-    <li><a href="#">커뮤니티</a>
-    <div class="depth2">
-       <ul>
-           <li><a href="#">게시판</a></li>
-           </ul>
-         <ul>
-           <li><a href="#">이미지</a></li>
-         </ul>
-         <ul>
-             <li><a href="#">오늘의 이슈</a></li>
-           </ul>
+                    <nav class="nav cf">
+                        <ul class="depth1 row cf">
+                            <li><a href="#">새소식</a>
+                                <div class="depth2">
+                                    <ul>
+                                        <li><a href="#">공지사항</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">패치내용</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">이벤트</a></li>
+                                    </ul>
+                                </div>
+                        </ul>
+                        <ul class="depth1 row">
+                            <li><a href="#">게임정보</a></li>
+                            <div class="depth2">
+                                <ul>
+                                    <li><a href="#">모바일소개</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">진 영</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">카드목록</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                        <ul class="depth1 row cf">
+                            <li><a href="#">커뮤니티</a>
+                                <div class="depth2">
+                                    <ul>
+                                        <li><a href="#">게시판</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">이미지</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">오늘의 이슈</a></li>
+                                    </ul>
+                                </div>
+                        </ul>
+                        <ul class="depth1 row">
+                            <li><a href="#">아이템샵</a></li>
+                            <div class="depth2">
+                                <ul>
+                                    <li><a href="#">카드구매</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">챔피언구매</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                        <ul class="depth1 row">
+                            <li><a href="#">고객센터</a></li>
+                            <div class="depth2">
+                                <ul>
+                                    <li><a href="#">질문/답변</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">문의하기</a></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </nav>
+                    <p class="closeMOgnb">
+                        <a href="#none">
+                            <strong class="blind">메뉴닫기</strong>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </p>
+                </div>
+        </header>
     </div>
-</ul>
-<ul class="depth1 row">
-    <li><a href="#">아이템샵</a></li>
-    <div class="depth2">
-        <ul>
-            <li><a href="#">카드구매</a></li>
-            </ul>
-            <ul>
-            <li><a href="#">챔피언구매</a></li>
-          </ul>
-     </div>
-</ul>
-        <ul class="depth1 row">
-            <li><a href="#">고객센터</a></li>
-            <div class="depth2">
-                <ul>
-                    <li><a href="#">질문/답변</a></li>
-                    </ul>
-                    <ul>
-                    <li><a href="#">문의하기</a></li>
-                  </ul>
-             </div>
-  </ul>
- </nav>
- <p class="closeMOgnb">
-    <a href="#none">
-        <strong class="blind">메뉴닫기</strong>
-        <span></span>
-        <span></span>
-    </a>
-</p>
-</div>
-</header>
-</div>
     <div class="background">
-    <figure class="vid">
-        <video autoplay muted loop preload="auto" poster="#">
-            <source src="img/background.mp4" type="video/mp4">
-        </video>
-    </figure>
+        <figure class="vid">
+            <video autoplay muted loop preload="auto" poster="#">
+                <source src="img/background.mp4" type="video/mp4">
+            </video>
+        </figure>
     </div>
     <div class="deco">
     </div>
 
 
 
-<div class="mobile">
-<div class="mobiles">
-<div class="mbg">
-    <div class="minfo"><p>모바일소개</p></div>
-    <a href="#"><img src="img/mobile.png" alt=""></a>
-    <div class="micon1">
-        <span><img src="img/mobileicon.png" alt=""></span>
-        <span> <img src="" alt=""></span>
-    </div>
-</div>
-    <div class="mtxt">
-    <p>크기
-        22M</p>
-    <p>설치 수
-        5,000,000+</p>
-    <p>현재 버전
-        01.02.021</p>
-    <p>필요한 Android 버전
-        5.0 이상</p>
-    <p>콘텐츠 등급
-        12+
-        폭력성
-       <a href=""><strong>자세히 알아보기</strong></a></p>
-    <p>상호작용 요소
-        사용자 상호작용, 인게임 구매</p>
-    <p>인앱 상품
-        항목당 ₩5,900 - ₩75,000</p>
-        <p>제공
-            Riot Games, Inc</p>
+    <div class="mobile">
+        <div class="mobiles cf">
+       
+                <div class="minfo">
+                    <p>모바일소개</p>
+                    <p>지금 당장 모바일로 즐기자!</p>
+                </div>
+                <div class="mimg">
+                <a href="#"><img src="img/mobile.png" alt=""></a>
             </div>
-                <div class="micon2">
+
+            <div class="m2">
+                <div class="micon1">
+                    <img src="img/mobileicon.png" alt="">
+                </div>
+        
+            <div class="mtxt">
+                <p>크기 22M</p>
+                <p>설치 수
+                    5,000,000+</p>
+                <p>현재 버전
+                    01.02.021</p>
+                <p>필요한 Android 버전
+                    5.0 이상</p>
+                <p>콘텐츠 등급
+                    12+
+                    폭력성
+                    <a href=""><strong>자세히 알아보기</strong></a></p>
+                <p>상호작용 요소
+                    사용자 상호작용, 인게임 구매</p>
+                <p>인앱 상품
+                    항목당 ₩5,900 - ₩75,000</p>
+                <p>제공
+                    Riot Games, Inc</p>
+            </div>
+            <div class="micon2">
                 <span><a href="https://play.google.com/store/apps/details?id=com.riotgames.legendsofruneterra">
-                    <img src="img/google.png" alt="">
-                </a> </span>
-                <span><a href="https://apps.apple.com/app/id1480617557?referrer=singular_click_id%3D4563ee70-a710-4ac2-91ea-74feeadb860d">
-                    <img src="img/appstore.png" alt="">
-                </a></span>
+                        <img src="img/google.png" alt="">
+                    </a> </span>
+                <span><a
+                        href="https://apps.apple.com/app/id1480617557?referrer=singular_click_id%3D4563ee70-a710-4ac2-91ea-74feeadb860d">
+                        <img src="img/appstore.png" alt="">
+                    </a></span>
             </div>
+        </div>
+
             <div class="play1">
-             <a href=""><img src="img/gameplay1.jpg" alt=""></a>
+                <a href=""><img src="img/gameplay1.jpg" alt=""></a>
             </div>
             <div class="play2">
                 <a href=""><img src="img/gameplay2.jpg" alt=""></a>
@@ -165,25 +179,27 @@
             <div class="play3">
                 <a href=""><img src="img/gameplay3.jpg" alt=""></a>
             </div>
-          <div class="hero">
-              <div class="cdj0"><p>카드 및 진영</p></div>
-              <div class="heros">
-           <div class="jin01"><img src="img/jin01s.png" alt=""></div>
-
-           
+            <div class="hero cf">
+                <h2>진영 및 영웅</h2>
+                <div class="heros">
+                    <div class="jin01"><img src="img/jin01s.png" alt=""></div>
+                    <div class="jin02"><img src="img/jin02s.png" alt=""></div>
+                    <div class="jin03"><img src="img/jin03s.png" alt=""></div>
+                    <div class="jin04"><img src="img/jin04s.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="cardbg">
+        <div class="cardshop row">
+        </div>
+        </div>
+        <div class="address">
 
         </div>
-</div>
-</div>
-<div class="deco2"></div>
-<div class="cardshop"></div>
-<div class="address">
-
-</div>
 
 
 
 
-
+        <script src="js/myscript.js"></script>
 </body>
 </html>

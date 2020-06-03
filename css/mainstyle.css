@@ -224,7 +224,7 @@ font-size: 20px;
 /*데코*/
 .deco{
   width: 100%;
-  height: 100px;
+  height: 70px;
   background:#000 ;
 
 }
@@ -232,7 +232,7 @@ font-size: 20px;
 
 /*모바일설명*/
 .mobile{
-  height: 1500px;
+  height: 1200px;
   background-size: cover;
     background:url(../img/background22.jpg) no-repeat;
     background-attachment: fixed;
@@ -240,100 +240,116 @@ font-size: 20px;
 }
 .mobiles {
     background: rgba(0, 0, 0, 0.5);
-    width: 1400px;
-    height: 1500px;
+    max-width: 1400px;
     margin: 0 auto;
     position: relative;
 }
-.mbg{
-  width: 400px;
-  height: 350px;
-
-}
 .minfo{
-  color: #fff;
-  font-size: 45px;
-  padding-top: 40px;
-  padding-left: 65px;
+  text-align: center;
+  color: #d5d2c9;
+  font-size: 50px;
+  padding: 30px 0;
 }
-.mbg img{
-  position: absolute; top: 10%; left: 5%;
-    float: left;
-    width: 300px;
-    height: 300px;
 
+
+
+.mobiles img {
+  max-width: 100%;
+}
+
+.mimg{
+  float: left;
+  width:20%;
+}
+.m2{
+  float: left;
+  width:25%;
+  padding-left: 20px;
+  color: #eee;
+  font-size: 14px ;
+  line-height: 1.2;
+}
+.mtxt{
+  margin-bottom: 10px;
 }
 .micon1 img{
-  position: absolute; top: 10%;left: 30%;
-  width: 80px;
-  height: 80px;
-}
-
-.mtxt {
-  color: #eee;
-  font-size: 17px;
-  float: right;
-  position: absolute; top: 17%; left: 30%;
+ width: 70px;
+margin-bottom: 10px;
 }
 
 
-.micon2{
-  position: absolute; top: 27%; left: 30%;
-  border: 2px solid #fff;
+.play1, .play2, .play3{
+  float: left;
+  width:18.33%;
+  padding: 0 5px;
 }
 
-.play1 img {
-  width: 250px;
-  height: 150px;
-  position: absolute; top: 10%; left: 45%;
-  border: 2px solid #000;
-}
-
-.play2 img {
-  width: 250px;
-  height: 150px;
-  position: absolute; top: 10%; left: 63%;
-  border: 2px solid #000;
-}
-.play3 img {
-  width: 250px;
-  height: 150px;
-  position: absolute; top: 10%; left: 81%;
-  border: 2px solid #000;
+.play1 img, .play2 img, .play3 img{
+  
+  width:100%;
 }
 
 .hero {
+  width: 80%;
+  position: relative;
+  margin: 0px auto;
+
+}
+
+.hero h2{
+  color: #eee;
+text-align: center;
+padding: 80px 0 20px;
+}
+
+.hero img{
   width: 100%;
-  height: 600px;
 }
 
-.cdj0{
-  color: #fff;
-  font-size: 50px;
-  position: absolute;top: 45%; left: 5%;
+.heros .marrow {
+  position: absolute; top: 50%;
+  transform: translateY(-50%),;
+  background: none;
+  border: none;
+  font-size: 80px;
+  color: #666;
+} 
+.heros .prevArrow {
+  left: -15px; z-index: 9999999
+}
+.heros .nextArrow{
+  right: -38px;
 }
 
-.jin01 img{
- position: absolute; top: 50%; left: 3%; 
-  width: 1300px;
-  height: 700px;
+.heros .slick-dots {
+  position: absolute; bottom: 20px; width: calc(50% + 30px);
+  text-align: right;
+}
+.heros .slick-dots li {
+  display: inline-block;
+}
+.heros .slick-dots li button{
+  width: 15px; height: 15px; background: #ffdd00; border: none;
+  text-indent: -9999px; overflow: hidden; border-radius: 50%; margin:0 5px
+}
+.heros .slick-dots li.slick-active button {
+  width: 40px; border-radius: 50px;
+}
+
+
+
+.cardbg {
   
+ width: 100%;
+   background: #444;
 }
-
-
-
-
-
 .cardshop{
-height: 1000px;
-background: #444;
+  max-width: 1400px;
+  margin: 0 auto;
+background: rgba(0, 0, 0, 0.5);
+height: 1500px;
 }
 
-/*맨끝*/
-.address{
-  width: 1920px;
-  height: 400px;
-}
 
 
 
