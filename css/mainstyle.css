@@ -232,7 +232,6 @@ font-size: 20px;
 
 /*모바일설명*/
 .mobile{
-  height: 1200px;
   background-size: cover;
     background:url(../img/background22.jpg) no-repeat;
     background-attachment: fixed;
@@ -243,13 +242,26 @@ font-size: 20px;
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
+    height: 1200px;
 }
-.minfo{
+.minfo p{
   text-align: center;
   color: #d5d2c9;
-  font-size: 50px;
-  padding: 30px 0;
+  font-size: 45px;
+
 }
+.minfo p:nth-child(1){
+  padding: 120px 0 30px 0;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.minfo p:nth-child(2){
+  font-size: 23px;
+  padding: 0 0 30px;
+}
+
+
 
 
 
@@ -260,12 +272,13 @@ font-size: 20px;
 
 .mimg{
   float: left;
-  width:20%;
+  width:22%;
+  padding-left: 50px;
 }
 .m2{
   float: left;
-  width:25%;
-  padding-left: 20px;
+  width:23%;
+  padding-left: 30px;
   color: #eee;
   font-size: 14px ;
   line-height: 1.2;
@@ -276,6 +289,10 @@ font-size: 20px;
 .micon1 img{
  width: 70px;
 margin-bottom: 10px;
+}
+
+.micon2{
+  padding-bottom: 20px;
 }
 
 
@@ -291,16 +308,29 @@ margin-bottom: 10px;
 }
 
 .hero {
+  top: 100px;
   width: 80%;
   position: relative;
   margin: 0px auto;
-
 }
 
-.hero h2{
-  color: #eee;
+.hero p{
+  color: #d5d2c9;
 text-align: center;
-padding: 80px 0 20px;
+padding: 10px 0 10px;
+font-size: 45px;
+}
+
+.hero p:nth-child(1) {
+    padding: 0 0 30px 0;
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+
+.hero p:nth-child(2) {
+  padding: 0 0 20px;
+  font-size:23px ;
+  color: #d5d2c9;
 }
 
 .hero img{
@@ -313,13 +343,13 @@ padding: 80px 0 20px;
   background: none;
   border: none;
   font-size: 80px;
-  color: #666;
+  color: #8b0000;
 } 
 .heros .prevArrow {
   left: -15px; z-index: 9999999
 }
 .heros .nextArrow{
-  right: -38px;
+  right: -25px;
 }
 
 .heros .slick-dots {
@@ -330,31 +360,87 @@ padding: 80px 0 20px;
   display: inline-block;
 }
 .heros .slick-dots li button{
-  width: 15px; height: 15px; background: #ffdd00; border: none;
+  width: 15px; height: 15px; background: #8b0000; border: none;
   text-indent: -9999px; overflow: hidden; border-radius: 50%; margin:0 5px
 }
 .heros .slick-dots li.slick-active button {
   width: 40px; border-radius: 50px;
 }
 
-
-
-.cardbg {
-  
- width: 100%;
-   background: #444;
+.heros .slick-slide{/*슬릭슬라이더 안에 있는 모든슬라이드*/
+  opacity: 0.7;
+  /* transform: scale(0.85); */
+  transition: all 0.5s;
 }
+
+.heros .slick-slide.slick-active{ /* 무대 공간에 보여지는슬라이드, slidesToShow */
+  opacity: 1;
+}
+
+.heros .slick-slide.slick-active.slick-current{/* 무대 중앙에 있는 슬라이드 하나 */
+  transform: scale(1);
+  /* opacity: 1; */
+}
+
+
 .cardshop{
+  width: 100%;
+  height: 1300px;
+  background: #444;
+}
+.cardbg{
+  position: relative;
   max-width: 1400px;
-  margin: 0 auto;
-background: rgba(0, 0, 0, 0.5);
-height: 1500px;
+  height: 1300px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.cardbgs{
+  overflow: hidden;
+}
+
+.sangpoomtxt{
+  text-align: center;
+  font-size: 43px;
+  padding: 120px 0 30px 0;
+  color: #d5d2c9;
+}
+
+.sangpoomtxt p:nth-child(1) {
+  padding: 0 0 30px 0;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.sangpoomtxt p:nth-child(2) {
+padding: 0 0 20px;
+font-size:23px ;
+color: #d5d2c9;
+}
+
+.sangpoom{
+  text-align: center;
+}
+
+.s2 img,
+ .s3 img{
+  width: 600px ;
+}
+
+.cards1{
+  position: absolute; top: 6%; left: 0%;
 }
 
 
 
+.cards2{
+  position: absolute; top: 70%; right: 0%;
+
+}
 
 
+.address {
+
+}
 
 
 

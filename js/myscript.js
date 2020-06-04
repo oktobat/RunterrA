@@ -1,8 +1,10 @@
 $(".heros").slick({
     autoplay: true,                        // 자동재생, 기본값이 false로 설정
-    autoplaySpeed: 2000,          // 간격시간
+    autoplaySpeed: 2500,          // 간격시간
     dots: true,                               // 동그라미 버튼, 기본값이 false로 설정
     speed: 600,                            // 슬라이드 동작하는데 걸리는 시간(생략가능)
+    centerMode:true,                  // 좌우측에 다다음슬라이드가 살짝비치는것
+    centerPadding:"90px",     
     slidesToShow: 1,                   // 보여지는 슬라이드 수(생략가능)
     slidesToScroll: 1,                   // 넘어가는 슬라이드 수(생략가능)
     pauseOnHover: true,          //  슬라이드 위에 마우스 over을할시 슬라이드 멈춤여부  false는 안멈춤(생략가능)
@@ -15,6 +17,7 @@ $(".heros").slick({
     prevArrow: '<button class="prevArrow marrow"><i class="fas fa-angle-left"></i></button>',
     nextArrow: '<button class="nextArrow marrow"><i class="fas fa-angle-right"></i></button>',
 })         
+
 
 $(".heros .plpa").toggle(
     function(){
