@@ -222,7 +222,7 @@ font-size: 20px;
 }
 
 /*데코*/
-.deco{
+.deco1{
   width: 100%;
   height: 70px;
   background:#000 ;
@@ -391,11 +391,8 @@ font-size: 45px;
 .cardbg{
   position: relative;
   max-width: 1400px;
-  height: 1300px;
+  height: 1200px;
   background: rgba(0, 0, 0, 0.5);
-}
-.cardbgs{
-  overflow: hidden;
 }
 
 .sangpoomtxt{
@@ -433,15 +430,24 @@ color: #d5d2c9;
 
 
 .cards2{
-  position: absolute; top: 70%; right: 0%;
-
+  position: absolute; top: 50%; right: 0%;
 }
+
+/*회사정보*/
 
 
 .address {
-
+width: 100%;
+height: 500px;
+background: #333;
 }
 
+.addressbox{
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.5);
+}
 
 
 
