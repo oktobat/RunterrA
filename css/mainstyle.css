@@ -217,7 +217,7 @@ font-size: 20px;
 /*동영상*/
 
 .background .vid{
-    width: 1920px;
+
     height: 1080px;
 }
 
@@ -436,19 +436,32 @@ color: #d5d2c9;
 /*회사정보*/
 
 
-.address {
+.adrs {
 width: 100%;
-height: 500px;
+height: 300px;
 background: #333;
 }
 
-.addressbox{
+.adrsbox{
   max-width: 1400px;
   margin: 0 auto;
-  height: 500px;
+  height: 300px;
   background: rgba(0, 0, 0, 0.5);
 }
+.adrsimgtxt{
+  text-align: center;
+}
 
+.adrsimgtxt img{
+  width: 220px;
+  padding-bottom: 18px;
+}
+.adrsimgtxt p{
+  font-size: 15px;
+ color: #d5d2c9;
+ padding-bottom: 5px;
+}
 
-
-
+.adrsimgtxt .p1{
+  padding:60px 0 40px
+}
