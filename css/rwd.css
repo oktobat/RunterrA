@@ -1,6 +1,134 @@
 @charset "utf-8";
 
 @media  screen  and  (max-width:1050px) {
+#top{
+    height: 100px; 
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 1920px;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
 
-    
+#top .nav{
+    position: absolute; top: 50%; left: 50%;
+}
+
+
+.logo h1{
+    display: none;
+}
+.tab{
+    width: 300px;
+    height: 300px;
+}
+.deco1{
+    display: none;
+}
+
+.background{
+    background: url(../img/tabhdbg.png) no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.mobile{
+    background-size: cover;
+      background:url(../img/background22.jpg) no-repeat;
+      background-attachment: fixed;
+      position: relative;
+  }
+  .mobiles {
+      background: rgba(0, 0, 0, 0.5);
+      max-width: 1400px;
+      margin: 0 auto;
+      position: relative;
+      height: 500px;
+  }
+          
+    .background .vid{
+       display: none;
+    }
+    .hero{
+        display: none;
+    }
+
+    .cardshop{
+        width: 100%;
+        height: 600px;
+        background: #444;
+      }
+      .cardbg{
+        position: relative;
+        max-width: 1400px;
+        height: 600px;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      
+      .sangpoomtxt{
+        text-align: center;
+        font-size: 43px;
+        padding: 180px 0 30px 0;
+        color: #d5d2c9;
+      }
+      
+      .sangpoomtxt p:nth-child(1) {
+        padding: 0 0 30px 0;
+        text-decoration: underline;
+        text-underline-position: under;
+      }
+      
+      .sangpoomtxt p:nth-child(2) {
+      padding: 0 0 20px;
+      font-size:23px ;
+      color: #d5d2c9;
+      }
+      
+      .sangpoom{
+        text-align: center;
+      }
+      
+      .s2 img,
+       .s3 img{
+        width: 600px ;
+      }
+    .cards1,
+    .cards2{
+        display: none;
+    }
+    .adrs {
+        width: 100%;
+        height: 300px;
+        background: #333;
+        }
+        
+        .adrsbox{
+          max-width: 1400px;
+          margin: 0 auto;
+          height: 300px;
+          background: rgba(0, 0, 0, 0.5);
+        }
+        .adrsimgtxt{
+          text-align: center;
+        }
+        
+        .adrsimgtxt img{
+          width: 220px;
+          padding-bottom: 18px;
+        }
+        .adrsimgtxt p{
+          font-size: 15px;
+         color: #d5d2c9;
+         padding-bottom: 5px;
+        }
+        
+        .adrsimgtxt .p1{
+          padding:60px 0 40px
+        }
+        
+}
+
+@media  screen  and  (max-width:799px) {
+
 }

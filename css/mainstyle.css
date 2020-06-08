@@ -148,7 +148,9 @@ body {
   }
 #top h1 img{width: 280px;}
 
-
+#top .tab{
+  display: none;
+}
 #header .header_cont {
     float: right;
     width: 780px;
