@@ -151,7 +151,7 @@ body {
 #top .tab{
   display: none;
 }
-#header .header_cont {
+#top .header_cont {
     float: right;
     width: 780px;
   }

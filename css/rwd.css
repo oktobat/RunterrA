@@ -5,17 +5,52 @@
     height: 100px; 
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
-    width: 1920px;
+    width: 1050px;
     top: 0;
     left: 0;
     z-index: 99999;
 }
 
-#top .nav{
-    position: absolute; top: 50%; left: 50%;
-}
 
+#top .depth1 {width: 120px;  color: #fff;;
+  border: 1px solid #fff;
+ margin-left: 30px;
+  font-weight: bold;
+  text-align: center; float: left; font-size: 15px; }
+  
+  #top .depth1:hover {
+  color: #c4923a; transition: all 0.5s;
+  
+  }
+  #top .depth1:hover .depth2{
+     transition: all 0.5s;
+    font-weight: normal;
+    margin-top: 19px;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+  
+  }
+  
+  #top .depth2 {
+    display:none;
+  font-size: 15px;
+  }
+  #top .depth2 li:hover {
+    transition: all 0.5s;
+    color: #c4923a;
+  }
+  #top .depth2 ul{
+    background:rgba(0, 0, 0, 0.5 );
+    height: 25px;
+  }
 
+  #top .header_cont {
+    float: right;
+    width: 780px;
+    border: 3px solid;
+  }
 .logo h1{
     display: none;
 }
@@ -23,6 +58,8 @@
     width: 300px;
     height: 300px;
 }
+
+/*모바일*/
 .deco1{
     display: none;
 }
@@ -31,13 +68,11 @@
     background: url(../img/tabhdbg.png) no-repeat;
     background-size: cover;
     height: 500px;
+    width: 100%;
 }
 
 .mobile{
-    background-size: cover;
-      background:url(../img/background22.jpg) no-repeat;
-      background-attachment: fixed;
-      position: relative;
+background: #555;
   }
   .mobiles {
       background: rgba(0, 0, 0, 0.5);
@@ -46,6 +81,70 @@
       position: relative;
       height: 500px;
   }
+
+.minfo p{
+  text-align: center;
+  color: #d5d2c9;
+  font-size: 30px;
+
+}
+.minfo p:nth-child(1){
+  padding: 120px 0 30px 0;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.minfo p:nth-child(2){
+  font-size: 18px;
+  padding: 0 0 30px;
+}
+
+
+.mobiles img {
+  max-width: 100%;
+}
+
+.mimg{
+  float: left;
+  width:25%;
+  padding-left: 50px;
+}
+.m2{
+  float: left;
+  width:20%;
+  padding-left: 30px;
+  color: #eee;
+  font-size: 14px ;
+  line-height: 1.2;
+}
+.mtxt{
+  margin-bottom: 10px;
+}
+.mtxt {
+  font-size: 10px;
+}
+.micon1 img{
+ width: 40px;
+margin-bottom: 10px;
+}
+
+.micon2{
+  border: 1px solid #fff;
+  width: 80px;
+  padding-bottom: 20px;
+}
+
+
+.play1, .play2, .play3{
+  float: left;
+  width:18.33%;
+  padding: 0 5px;
+}
+
+.play1 img, .play2 img, .play3 img{
+  
+  width:100%;
+}
           
     .background .vid{
        display: none;
