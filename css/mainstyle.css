@@ -147,18 +147,18 @@ body {
 #top h1{position: absolute; top: 40px; left: 150px;
   }
 
-#top img {width: 280px;}
+#top h1 img {width: 280px;}
 
-#top  h2 {display: none;}
 
 #top .header_cont {
     float: right;
     width: 780px;
-  
   }
   
   .util {
     text-align: right;
+    width: 700px ;
+ 
   }
   
   .util>li {
@@ -244,7 +244,7 @@ font-size: 20px;
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
-    height: 1200px;
+    height: 1300px;
 }
 .minfo p{
   text-align: center;
@@ -426,13 +426,15 @@ color: #d5d2c9;
 }
 
 .cards1{
-  position: absolute; top: 6%; left: 0%;
+  position: absolute; top: 6%; left: -100%;
+  transition: all 1s;
 }
 
 
 
 .cards2{
-  position: absolute; top: 70%; right: 0%;
+  position: absolute; bottom: 6%; right: -100%;
+  transition: all 1s;
 }
 
 /*회사정보*/

@@ -1,3 +1,6 @@
+
+
+
 $(".heros").slick({
     autoplay: true,                        // 자동재생, 기본값이 false로 설정
     autoplaySpeed: 2500,          // 간격시간
@@ -29,3 +32,27 @@ $(".heros .plpa").toggle(
             $(this).find("i").removeClass("fa-play").addClass("fa-pause")
     }
 )
+
+
+$(window).scroll(function(){
+
+    var sct = $(this).scrollTop()
+   if(sct > 1500) {
+       $(".cards1").css({
+           left:"0%"
+       })
+   } else {
+    $(".cards1").css({
+        left:"-100%"
+    })
+   }
+   if(sct > 2000) {
+    $(".cards2").css({
+        right:"0%"
+    })
+} else {
+ $(".cards2").css({
+     right:"-100%"
+ })
+}
+})

@@ -1,6 +1,8 @@
 @charset "utf-8";
 
 @media  screen  and  (max-width:1050px) {
+
+
 #top{
     height: 100px; 
     background: rgba(0, 0, 0, 0.5);
@@ -9,6 +11,12 @@
     top: 0;
     left: 0;
     z-index: 99999;
+}
+
+#top h1{position: absolute; top: 15px; left: 50px;
+}
+#top h1 img{
+  width: 150px;
 }
 
 
@@ -51,13 +59,7 @@
     padding: 0 10px 0 0
 
   }
-.logo h1{
-    display: none;
-}
-.tab{
-    width: 100px;
-    height: 100px;
-}
+
 
 /*모바일*/
 .deco1{
@@ -68,7 +70,8 @@
     background: url(../img/tabhdbg.png) no-repeat;
     background-size: cover;
     height: 500px;
-    width: 100%;
+    position: relative;
+
 }
 
 .mobile{
@@ -130,10 +133,12 @@ margin-bottom: 10px;
 
 .micon2{
 
-  width: 80px;
+  width: 200px;
   padding-bottom: 20px;
 }
-
+.micon2 img{
+  width: 80px;
+}
 
 .play1, .play2, .play3{
   float: left;
@@ -192,10 +197,13 @@ margin-bottom: 10px;
        .s3 img{
         width: 400px ;
       }
-    .cards1,
-    .cards2{
-        display: none;
+    .cards1 img,
+    .cards2 img{
+    display: none;
     }
+
+
+
     .adrs {
         width: 100%;
         height: 300px;
@@ -232,7 +240,20 @@ margin-bottom: 10px;
 
 @media  screen  and  (max-width:799px) {
 
-  /* .openMOgnb { display:block; position:absolute;
+  
+  #top h1{position: absolute; top: 30px; left: 350px;
+  }
+  .m2 .micon1{
+    display: none;
+  }
+  .micon2 {
+ 
+    width: 200px;
+  }
+  .micon2 img{
+    width: 80px;
+  }
+  .openMOgnb { display:block; position:absolute;
     top:35px; left:15px; width:25px; height:17px;  }
 .openMOgnb   span  { display:block; width:25px; height:3px;
     background:#fff; margin-bottom:4px; 
@@ -250,29 +271,23 @@ margin-bottom: 10px;
   position: absolute;    top: 0;      left: 0     }
 .closeMOgnb    span:nth-of-type(2)   {
     transform: rotate(-45deg);        }
-    #header .header_cont {  display:none; 
-      float: none;    width: 100%;     padding-right: 0px;   
-      background: #31353d;   }
-    #header.on    .header_cont {     display: block;   }
-  
-    .util { text-align:left; margin-top: 20px;}
-    .util > li { display:inline-block; font-size:14px;  color:#eee;
-    padding:10px 0 20px 20px; }
-    /* .util > li:after {content:"|"; display:inline-block; font-size:10px; color:#eee; position:relative; left:10px; top:-2px }
-    .util > li:last-child:after { display:none } */
-  
-     /* .depth1 { text-align:left;  border-top: 1px solid #83868b; }
-      .depth1 > li { display:block; float:left; width:50%; 
-      font-size:18px; color:#fff;  padding:0px;
-      border-bottom: 1px solid #83868b;
-      border-left: 1px solid #83868b;   }
-      .depth1 > li:nth-child(2n+1) {    border-left: none     }
-    .depth1 > li > a {  display: block;
-      padding: 20px 0px 20px 60px;
-      background-size: 49px 56px;
-      background-repeat:no-repeat;   }
-  
-  
-      .depth1 > li:last-child { padding-right:0px } */ */
+ 
 
+
+
+
+      .background{
+        background: url(../img/background2.jpg)no-repeat;
+        background-size: cover
+      }
 }
+@media screen and (max-width:799px) {
+  .popupBox.on  button {
+    font-size:40px;
+    color:#fff;
+    position:absolute;
+    top:-30px; 
+    right:-30px; 
+    background:none;
+    border:none;
+  }
