@@ -146,14 +146,15 @@ body {
 
 #top h1{position: absolute; top: 40px; left: 150px;
   }
-#top h1 img{width: 280px;}
 
-#top .tab{
-  display: none;
-}
+#top img {width: 280px;}
+
+#top  h2 {display: none;}
+
 #top .header_cont {
     float: right;
     width: 780px;
+  
   }
   
   .util {
