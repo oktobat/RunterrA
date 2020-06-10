@@ -1,6 +1,8 @@
 
 
 
+
+
 $(".heros").slick({
     autoplay: true,                        // 자동재생, 기본값이 false로 설정
     autoplaySpeed: 2500,          // 간격시간

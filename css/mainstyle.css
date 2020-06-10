@@ -235,7 +235,7 @@ font-size: 20px;
 /*모바일설명*/
 .mobile{
   background-size: cover;
-    background:url(../img/background22.jpg) no-repeat;
+    background:url(../img/background11.png) no-repeat;
     background-attachment: fixed;
     position: relative;
 }
