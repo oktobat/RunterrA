@@ -58,3 +58,24 @@ $(window).scroll(function(){
  })
 }
 })
+
+$(".openMOgnb").on("click", function(){
+    $("#top").addClass("on")
+    $(this).hide()
+    $(".closeMOgnb").show()
+})
+
+$(".closeMOgnb").on("click", function(){
+    $("#top").removeClass("on")
+    $(this).hide()
+    $(".openMOgnb").show()
+})
+
+
+$(".play2 a").on("click", function(e){
+    e.preventDefault()
+   var src = $(this).find("img").attr("src")
+   $(".popupbox").addClass("on")
+   $(".popupbox .inner  img").attr("src", src)
+
+})
