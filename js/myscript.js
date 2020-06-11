@@ -75,7 +75,7 @@ $(".closeMOgnb").on("click", function(){
 $(".play2 a").on("click", function(e){
     e.preventDefault()
    var src = $(this).find("img").attr("src")
-   $(".popupbox").addClass("on")
-   $(".popupbox .inner  img").attr("src", src)
+   $(".popupBox").addClass("on")
+   $(".popupBox .inner  img").attr("src", src)
 
 })

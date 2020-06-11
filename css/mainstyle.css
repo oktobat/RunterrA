@@ -472,20 +472,20 @@ background: #333;
   padding:60px 0 40px
 }
 
-.popupbox{
+.popupBox{
   display: none;
 }
-.popupbox.on{
+.popupBox.on{
   position: absolute; top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(0, 0, 0, 0.9);
   display: block;
   z-index: 9999999;
 }
-.popupbox.on .inner{
+.popupBox.on .inner{
   position: absolute; top: 50%; left: 50%;
   transform: translate(-50%, -50%);
 }
-.popupbox.on .inner button{
+.popupBox.on .inner button{
   font-size: 30px;
   color: #fff;
   position: absolute; top: 0%;right: 0%;
