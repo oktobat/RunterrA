@@ -142,7 +142,8 @@ body {
   position: fixed; top: 0;left: 0;
   }
 
-#top h1{ float: left; }
+#top h1{ float: left; 
+padding-top: 20px;}
 
 #top h1 img {width: 280px;
 }
@@ -189,26 +190,28 @@ text-align: center; float: left; font-size: 25px; padding: 0 25px;
 position: relative; 
 }
 
-#top .depth1:hover {
+#top .depth1 > li:hover {
 color: #c4923a; transition: all 0.5s;
 
 }
 #top .depth1>li:hover .depth2{
    transition: all 0.5s;
-  font-weight: normal;
+  font-weight: bold;
   display: block;
   font-size: 20px;
   text-align: center;
   color: #fff;
  width: 100%;
  position: absolute; top: 85px; left: 0;
- padding: 20px 0px;
+ padding: 10px 0px;
  background:rgba(0, 0, 0, 0.5 );
+
 }
 
 #top .depth2 {
   display:none;
 }
+
 #top .depth2 li:hover {
   transition: all 0.5s;
   color: #c4923a;
@@ -222,7 +225,7 @@ color: #c4923a; transition: all 0.5s;
 /*동영상*/
 
 .background .vid{
-    height: 1080px;
+    height: 100%;
 }
 
 /*데코*/
@@ -397,7 +400,9 @@ font-size: 45px;
   max-width: 1400px;
   height: 1300px;
   background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
+
 
 .sangpoomtxt{
   text-align: center;
