@@ -1,2 +1,2 @@
 # RunterrA
- https://ehd2493.github.io/RunterrA/.
+https://oktobat.github.io/RunterrA/
