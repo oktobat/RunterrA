@@ -79,7 +79,7 @@ $(".play2 a").on("click", function (e) {
     $(".popupBox").addClass("on")
     $(".popupBox .inner").css({
         top: mobileTop + 200,
-        transform: "translate(-50%, 0%)"
+        transform: "translate(0%, 0%)"
     })
     $(".popupBox .inner  img").attr("src", src)
 

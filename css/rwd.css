@@ -476,4 +476,13 @@
     line-height: 25px;
   }
 
+  .popupBox.on .inner {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    right: 10%;
+  }
+
+
+
 }

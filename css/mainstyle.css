@@ -548,9 +548,13 @@ body {
 
 .popupBox.on .inner {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0%;
+  left: 20%;
+  right: 20%;
+}
+
+.popupBox.on .inner img {
+  width: 100%
 }
 
 .popupBox.on .inner button {
